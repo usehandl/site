@@ -39,7 +39,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Handle</title>
+        <title>handl</title>
       </Head>
       <Header onFaqClick={onFaqClick} onHowClick={onHowClick} />
       <main>

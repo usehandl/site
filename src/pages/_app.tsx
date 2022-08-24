@@ -95,8 +95,8 @@ function MyApp({ Component, pageProps }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: ORG_SCHEMA }}
         />
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/img/logo.svg" />
+        <link rel="shortcut icon" href="/images/favicon.ico" />
+        <link rel="apple-touch-icon" href="/images/favicon.ico" />
         <link
           rel="preload"
           href="/fonts/poppins-v15-latin-300.woff2"
