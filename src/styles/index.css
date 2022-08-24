@@ -1,0 +1,79 @@
+@import 'tailwindcss/base';
+
+@layer base {
+  body {
+    background-color: black;
+    color: white;
+  }
+}
+
+@import 'tailwindcss/components';
+
+@layer components {
+  .btn-basic {
+    @apply px-6 py-3 text-white rounded-lg shadow-lg focus:outline-none shadow-purple-500/50;
+  }
+
+  .btn-basic.disabled {
+    @apply shadow-transparent;
+  }
+
+  .btn-primary {
+    @apply px-6 py-3 text-white rounded-full bg-purple focus:outline-none;
+  }
+
+  .btn-hollow {
+    @apply px-6 py-3 text-white bg-transparent border border-white rounded-full focus:outline-none;
+  }
+
+  .btn-gradient {
+    @apply;
+  }
+
+  .carousel__slider-tray {
+    gap: 1rem;
+  }
+}
+
+@import 'tailwindcss/utilities';
+
+.bg-gradient {
+  background: linear-gradient(
+    93.53deg,
+    #5e5ef1 0%,
+    #9b53d4 51.56%,
+    #ff51b3 100%
+  );
+}
+
+.bg-gradient-pink {
+  background: linear-gradient(90deg, #ff4a4a 0%, #dc1fff 100%);
+}
+
+.text-gradient {
+  background: linear-gradient(
+    93.53deg,
+    #5e5ef1 0%,
+    #9b53d4 51.56%,
+    #ff51b3 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.wallet-connect-gradient {
+  background: linear-gradient(
+    90deg,
+    rgb(35, 126, 255) 0%,
+    rgb(0, 10, 255) 100%
+  );
+}
+
+.metamask-gradient {
+  background: linear-gradient(
+    90deg,
+    rgb(231, 139, 58) 0%,
+    rgb(231, 172, 58) 100%
+  );
+}
