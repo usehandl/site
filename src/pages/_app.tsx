@@ -1,7 +1,5 @@
 import Head from 'next/head';
 import { useEffect } from 'react';
-import { GoogleOAuthProvider } from '@react-oauth/google';
-import { ToastContainer } from 'react-toastify';
 import { useRouter } from 'next/router';
 import '../styles/index.css';
 
@@ -9,15 +7,11 @@ import 'react-toastify/dist/ReactToastify.min.css';
 
 import { GTMPageView } from '../services/ga';
 
-import ErrorContainer from '../containers/Error';
-import { ModalProvider } from '../contexts/modal';
-
 import {
   DOMAIN,
   GLOBAL_TITLE,
   GLOBAL_META,
   ORG_SCHEMA,
-  GOOGLE_CLIENT_ID,
 } from '../lib/constants';
 
 function MyApp({ Component, pageProps }) {
@@ -158,33 +152,9 @@ function MyApp({ Component, pageProps }) {
           />
         )}
       </Head>
-      <GoogleOAuthProvider clientId={GOOGLE_CLIENT_ID}>
-        <ModalProvider>
-          <Layout countryCode={pageProps?.countryCode || 'US'}>
-            {[401, 404].includes(pageProps?.errorCode) ? (
-              <>
-                <Head>
-                  <title>404</title>
-                </Head>
-                <div className="flex items-center justify-center h-screen -mt-16">
-                  <ErrorContainer />
-                </div>
-              </>
-            ) : (
-              <Component {...pageProps} />
-            )}
-            <ToastContainer
-              position="bottom-center"
-              autoClose={5000}
-              hideProgressBar={true}
-              newestOnTop={false}
-              draggable={false}
-              closeOnClick
-              pauseOnHover
-            />
-          </Layout>
-        </ModalProvider>
-      </GoogleOAuthProvider>
+      <Layout countryCode={pageProps?.countryCode || 'US'}>
+        <Component {...pageProps} />
+      </Layout>
     </>
   );
 }

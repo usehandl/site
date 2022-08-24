@@ -11,12 +11,6 @@ const DOMAIN = 'https://usehandl.com';
 const GLOBAL_META = `Task management app on Slack`;
 const GLOBAL_TITLE = `Handl: Task management app on Slack`;
 
-const GOOGLE_CLIENT_ID =
-  '823656330152-ao70hrftbb5avcuht7oalkm3h46lhccv.apps.googleusercontent.com';
-const FB_CLIENT_ID = '';
-const TWITTER_CLIENT_ID = '';
-const DEFAULT_CURRENCY = 'USD';
-
 const ORG_SCHEMA = JSON.stringify({
   '@context': 'http://schema.org',
   '@type': 'Organization',
@@ -45,14 +39,7 @@ export {
   ORG_SCHEMA,
   GLOBAL_META,
   GLOBAL_TITLE,
-  // DISCORD_URL,
   TELEGRAM_URL,
   LINKEDIN_URL,
-  // INSTAGRAM_URL,
-  // TWITTER_URL,
-  GOOGLE_CLIENT_ID,
-  FB_CLIENT_ID,
-  TWITTER_CLIENT_ID,
-  DEFAULT_CURRENCY,
   COLORS,
 };
