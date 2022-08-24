@@ -34,7 +34,7 @@ function MyApp({ Component, pageProps }) {
     };
   }, [router.events]);
 
-  const ogImage = `https://${DOMAIN}/og.png`;
+  const ogImage = `https://${DOMAIN}/img/logo.svg`;
 
   const Layout = Component.Layout || (({ children }) => <>{children}</>);
   return (
@@ -42,8 +42,8 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="application-name" content="crypto-league-x" />
-        <meta name="apple-mobile-web-app-title" content="crypto-league-x" />
+        <meta name="application-name" content="handl-x" />
+        <meta name="apple-mobile-web-app-title" content="handl-x" />
         <meta name="theme-color" content="#0C0047" />
         <meta name="msapplication-navbutton-color" content="#0C0047" />
         <meta
@@ -94,7 +94,7 @@ function MyApp({ Component, pageProps }) {
         <meta property="og:image:width" content="1080" />
         <meta property="og:image:height" content="562" />
         <meta property="og:image:alt" content={GLOBAL_TITLE} />
-        <meta property="og:site_name" content="crypto-league-x" />
+        <meta property="og:site_name" content="handl-x" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="en_IN" />
         <script
@@ -102,7 +102,7 @@ function MyApp({ Component, pageProps }) {
           dangerouslySetInnerHTML={{ __html: ORG_SCHEMA }}
         />
         <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/images/icons/icon-192x192.png" />
+        <link rel="apple-touch-icon" href="/img/logo.svg" />
         <link
           rel="preload"
           href="/fonts/poppins-v15-latin-300.woff2"

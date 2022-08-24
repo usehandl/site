@@ -4,11 +4,8 @@ const MOBILE_WIDTH = 960;
 const ONLY_MOBILE_WIDTH = 960;
 const GTM_ID = '';
 
-// const DISCORD_URL = 'https://discord.gg/93P8SmzyHM';
 const TELEGRAM_URL = 'https://t.me/+RF1nXgWag1o2MTll';
 const LINKEDIN_URL = 'https://www.linkedin.com/company/usehandl/';
-// const INSTAGRAM_URL = 'https://instagram.com/tokenleague_xyz';
-// const TWITTER_URL = 'https://twitter.com/tokenleaguexyz/';
 
 const DOMAIN = 'https://usehandl.com';
 const GLOBAL_META = `Task management app on Slack`;
@@ -26,7 +23,7 @@ const ORG_SCHEMA = JSON.stringify({
   name: 'handl',
   description: GLOBAL_META,
   url: `https://${DOMAIN}`,
-  logo: `https://${DOMAIN}/logo.png`,
+  logo: `https://${DOMAIN}/img/logo.svg`,
   address: {
     '@type': 'PostalAddress',
     streetAddress: 'Business Bay',
